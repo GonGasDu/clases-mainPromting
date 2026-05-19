@@ -1,0 +1,80 @@
+[
+  {
+    "id": "feedback-v1",
+    "tarea": "redacción",
+    "descripcion": "Feedback constructivo para empleado — versión inicial",
+    "prompt": "Escribí un feedback para {nombre} sobre {situacion}.",
+    "system": "Sos un líder de equipo.",
+    "version": 1,
+    "modelo": "local",
+    "temperatura": 0.7,
+    "score": 2,
+    "fecha": "2026-05-19",
+    "notas": "Demasiado genérico. No especifica estructura ni tono."
+  },
+  {
+    "id": "feedback-v2",
+    "tarea": "redacción",
+    "descripcion": "Feedback constructivo para empleado — con CoT y rúbrica",
+    "prompt": "Escribí feedback para {nombre}. Situación: {situacion}\nCriterios: primero lo positivo, luego el área de mejora como hecho (no juicio),\nproponer una acción concreta. Tono directo. Máximo 5 oraciones.",
+    "system": "Sos un líder de equipo con experiencia en desarrollo de personas.",
+    "version": 2,
+    "modelo": "local",
+    "temperatura": 0.5,
+    "score": 5,
+    "fecha": "2026-05-19",
+    "notas": "Versión estable. Probado en 12 casos reales con buen resultado."
+  },
+  {
+    "id": "sentiment-v1",
+    "tarea": "clasificación",
+    "descripcion": "Clasificación de sentimiento de comentarios de clientes",
+    "prompt": "Clasificá el sentimiento: '{comentario}'\nFormato: Sentimiento: <Positivo|Negativo|Neutro> | Razón: <una frase>",
+    "system": "Sos un analista de experiencia del cliente.",
+    "version": 1,
+    "modelo": "local",
+    "temperatura": 0.3,
+    "score": 4,
+    "fecha": "2026-05-19",
+    "notas": "Funciona bien. Occasionally clasifica como Neutro casos borderline Negativo."
+  },
+  {
+    "id": "resumen-ejecutivo-v1",
+    "tarea": "resumen",
+    "descripcion": "Resumen ejecutivo de reportes o documentos extensos",
+    "prompt": "Resumí el siguiente texto en formato ejecutivo:\n1. Objetivo principal (1 oración)\n2. Hallazgos clave (3 bullets)\n3. Próximos pasos recomendados (2 bullets)\n\nTexto: {texto}",
+    "system": "Sos un consultor de management que comunica con claridad.",
+    "version": 1,
+    "modelo": "local",
+    "temperatura": 0.4,
+    "score": 4,
+    "fecha": "2026-05-19",
+    "notas": "Muy útil para reuniones. Ajustar número de bullets según longitud del texto."
+  },
+  {
+    "id": "sql-v1",
+    "tarea": "código",
+    "descripcion": "Generar consultas SQL a partir de preguntas en lenguaje natural",
+    "prompt": "Generá una consulta SQL para esta necesidad: '{necesidad}'\nEsquema disponible: {esquema}\nReglas: solo SELECT, sin subconsultas anidadas, incluir comentario de la lógica.",
+    "system": "Sos un DBA que escribe SQL claro y eficiente.",
+    "version": 1,
+    "modelo": "local",
+    "temperatura": 0.2,
+    "score": 4,
+    "fecha": "2026-05-19",
+    "notas": "Temperatura baja para mayor determinismo. Validar siempre antes de ejecutar."
+  },
+  {
+    "id": "sentiment-v2",
+    "tarea": "clasificación",
+    "descripcion": "Clasificación de sentimiento — con confianza y acción recomendada",
+    "prompt": "Clasificá el sentimiento de este comentario de cliente: '{comentario}'\nFormato estricto:\nSentimiento: <Positivo|Negativo|Neutro>\nConfianza: <Alta|Media|Baja>\nAcción sugerida: <una oración sobre qué debería hacer el equipo de soporte>",
+    "system": "Sos un analista de experiencia del cliente con foco en acciones preventivas.",
+    "version": 2,
+    "modelo": "local",
+    "temperatura": 0.3,
+    "score": 5,
+    "fecha": "2026-05-19",
+    "notas": "Agrega confianza y acción recomendada. Más útil para triaje de tickets."
+  }
+]
