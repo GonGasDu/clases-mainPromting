@@ -9,7 +9,7 @@
     "modelo": "local",
     "temperatura": 0.7,
     "score": 2,
-    "fecha": "2026-05-19",
+    "fecha": "2026-05-20",
     "notas": "Demasiado genérico. No especifica estructura ni tono."
   },
   {
@@ -22,7 +22,7 @@
     "modelo": "local",
     "temperatura": 0.5,
     "score": 5,
-    "fecha": "2026-05-19",
+    "fecha": "2026-05-20",
     "notas": "Versión estable. Probado en 12 casos reales con buen resultado."
   },
   {
@@ -35,7 +35,7 @@
     "modelo": "local",
     "temperatura": 0.3,
     "score": 4,
-    "fecha": "2026-05-19",
+    "fecha": "2026-05-20",
     "notas": "Funciona bien. Occasionally clasifica como Neutro casos borderline Negativo."
   },
   {
@@ -48,7 +48,7 @@
     "modelo": "local",
     "temperatura": 0.4,
     "score": 4,
-    "fecha": "2026-05-19",
+    "fecha": "2026-05-20",
     "notas": "Muy útil para reuniones. Ajustar número de bullets según longitud del texto."
   },
   {
@@ -61,7 +61,7 @@
     "modelo": "local",
     "temperatura": 0.2,
     "score": 4,
-    "fecha": "2026-05-19",
+    "fecha": "2026-05-20",
     "notas": "Temperatura baja para mayor determinismo. Validar siempre antes de ejecutar."
   },
   {
@@ -74,7 +74,7 @@
     "modelo": "local",
     "temperatura": 0.3,
     "score": 5,
-    "fecha": "2026-05-19",
+    "fecha": "2026-05-20",
     "notas": "Agrega confianza y acción recomendada. Más útil para triaje de tickets."
   }
 ]
